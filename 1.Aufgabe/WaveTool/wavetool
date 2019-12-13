@@ -1,0 +1,177 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{graphicx}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+
+
+\title{Aufgaben zur WCAG 2.0}
+\author{Nathalie Senechal, Dilyara Garipova}
+\date{18.12.2019}
+
+\begin{document}
+
+\maketitle
+\pagebreak
+\pagebreak
+
+Die Gopal Seite besteht aus vier Strukturseiten; Startseite vom Projekt, "Über uns", "Email", "Einschreibung".
+Nach der Einschreibung hat man dann weitere Seiten: Etappe 1 bis 8, wobei aktuell die Etappen 1 bis 3 weitere Seiten haben (Etappe 1 hat weitere 6 Seiten, Etappe 2 : 4, Etappe 3: 4). Bei der Einschreibung kriegt man auch Zugang zur Seite "Grupen" und "Teilnahmebediengungen Überraschungspaket.
+Insgesamt wird das 25 Übersichtsseiten.
+
+Zielkonformitätsstufe wäre AA.
+
+Auf den Seiten trifft man Folgende Structural Elemente (in Klammern Zuordnung nach WCAG):
+
+-Structural Elements:
+\begin{itemize}
+\item Heading Level 1 (1.3.1, 2.4.1, 2.4.6 AA)
+\item Heading Level 2 (1.3.1, 2.4.1, 2.4.6)
+\item Heading Level 3 (1.3.1, 2.4.1, 2.4.6)
+\item Unordered list (1.3.1)
+\item Definition/description list (1.3.1)
+\item Inline Frame (none)
+\item Header (1.3.1, 2.4.1)
+\item Navigation (1.3.1, 2.4.1)
+\item Search (1.3.1, 2.4.1)
+\item Main Content (1.3.1, 2.4.1)
+\item Footer (1.3.1, 2.4.1)
+\item Aside (1.3.1, 2.4.1)
+\item Data table (1.3.1)
+\item Table caption (1.3.1)
+\item Table header cell (1.3.1)
+\end{itemize}
+
+Abbildung 1:Die Startseite von der gOpal Seite, wobei Fehler für Barrierfreiheit angezeigt werden:
+
+\begin{itemize}
+\item 1. Fehlende Spracheanzeige
+\item 2.Kontrast (weiss auf blau)
+\item 3.das Menü links nicht zugreifbar
+\end{itemize}
+\pagebreak
+
+
+\begin{figure}
+\includegraphics[width=0.8\textwidth, height=150px]{1.png}
+\caption{Die Startseite.}
+
+
+\end{figure} 
+
+Abbildung 2:Die Seite von der Gruppe:
+\begin{itemize}
+\item 1. Fehlende Spracheanzeige
+\item 2.Kontrast (weiss auf blau)
+\item 3.das Menü links nicht zugreifbar
+\item 4.Empty link auf Titel und Beschreibung
+\end{itemize}
+\begin{figure}[h]
+
+
+\includegraphics[width=0.8\textwidth, height=150px]{2.png}
+\caption{Die Gruppe.}
+
+
+\end{figure} 
+
+\pagebreak
+Abbildung 3: Die Seite mit den Gruppemitgliedern:
+\begin{itemize}
+\item 1. Fehlende Spracheanzeige
+\item 2.Kontrast (weiss auf blau)
+\item 3.das Menü links nicht zugreifbar
+\item 4.Empty Heading (Falsche Tabellierung)
+\end{itemize}
+
+\begin{figure}[h]
+
+
+\includegraphics[width=0.8\textwidth, height=150px]{3.png}
+\caption{Die Gruppeübersicht}
+
+
+\end{figure} 
+
+
+
+Mit Wave Tool lässt sich die Seite auf folgende Fehler überpüfen (in Klammern ist die Zuordnung nach WCAG):
+\begin{itemize}
+\item Missing Form Label (1.1.1, 1.3.1, 2.4.6,3.3.2)
+\item Document language missing (3.1.1)
+\item Empty Button (1.1.1, 2.4.4)
+\item Empty link (2.4.4)
+\item Empty heading (1.3.1, 2.4.1, 2.4.6)
+\item Broken Aria menu (2.1.1, 4.1.2)
+\item Low Contrast (1.4.3)
+\end{itemize} 
+
+Bei dem Seiteabruf kommt man zur Startseite von gOpal. Die Seite ist gut mit der TAB-Taste bedienbar, vor allem für die Enschreibung,falls man noch nicht eingeschrieben ist. Aber für die Übersichtsseiten ist TAB-Taste nutzlos, da der Inhalt vom Kurs mit TAB Taste nicht zugreifbar ist.
+Oder anders gesagt: man kommt nur zu Startseite und Gruppeübersicht, auf der Startseite wird noch das Video gespielt.
+
+
+
+
+Nach der Überprüfung nach WCAG 2.0 kommt man zu folgenden Kriterien (in Klammern Konformitätsstufe von dem Kriterium):
+
+\begin{itemize}
+
+\item Principle 1:Perceivable
+\begin{itemize}
+\item Guideline 1.1 Text Alternatives
+\begin{itemize}
+\item 1.1.1 Non-text Content (Level A)
+\end{itemize}
+
+\item Guideline 1.3 Adaptable
+\begin{itemize}
+\item 1.3.1 Info and Relationships (Level A)
+\end{itemize}
+\item Guideline 1.4 Distinguishable
+\begin{itemize}
+\item 1.4.3 Contrast (Minimum) (Level AA)
+\end{itemize}
+\end{itemize}
+
+\item Principle 2:Operable
+
+\begin {itemize}
+\item Guideline 2.1 Keybord Accessible
+\begin{itemize}
+\item 2.1.1Keybord (Level A)
+\end{itemize}
+\item Guideline 2.4 Navigable
+\begin{itemize}
+\item 2.4.1 Bypass Blocks (Level A)
+\item 2.4.4 Link Purpose (In Context) (Level A)
+\item 2.4.6 Headings and Labels (Level AA)
+\end{itemize}
+\end{itemize}
+
+\item Principle 3:Understandble
+\begin{itemize}
+\item Guideline 3.1 Readable
+\begin {itemize}
+\item 3.1.1 Language of Page (Level A)
+\end{itemize}
+\item Guideline 3.3
+\begin {itemize}
+\item 3.3.2 Labels or Instructions
+\end {itemize}
+\end{itemize}
+
+\item Principle 4:Robust
+\begin{itemize}
+\item Guideline 4.1 Compatible
+\begin {itemize}
+\item 4.1.2 Name, Role, Value
+\end {itemize}
+\end {itemize}
+\end{itemize}
+
+
+Nach der Überpüfung der gOpal Seite kann man sagen, dass die Seite nur die Konformitätsstufe A  hat. Nach Wave Tool und Seitenprozessenabruf hat sind Fehler aufgetreten, die die Webseite unpraktisch und schwerbedienbar machen.
+
+
+\end{document}
